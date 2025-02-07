@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl" data-theme="dark"> 
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/output.css" />
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <link rel="icon" type="image/png" href="./public/images/favicon/icon.png" />
-    <title>فروشگاه اینترنتی دسترسی</title>
+    <title>سبد خرید</title>
   </head>
   <body>
     <!-- #region header-desktop-->
@@ -100,13 +99,15 @@
       <!-- #endregion -->
       <!-- #region header-bottom-->
       <div class="h-2/5 mt-1.5 flex gap-x-5 justify-between items-center">
-        <ul class="flex-col h-full space-y-4 mt-2">
+        <ul class="flex-col h-full group space-y-4 mt-2">
           <li
-            class="flex justify-center items-center nav-link text-[14px] text-[#fe5f55] font-medium font-[shabnam]"
+            class="flex justify-center items-center nav-link text-[14px] text-[#00000099] group-hover:text-[#fe5f55] font-medium font-[shabnam]"
           >
             خانه
           </li>
-          <li class="flex h-[3px] justify-center bg-[#fe5f55]"></li>
+          <li
+            class="h-[3px] hidden group-hover:flex justify-center bg-[#fe5f55]"
+          ></li>
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
@@ -329,78 +330,109 @@
       <!-- #endregion -->
     </div>
     <!-- #endregion -->
+    <!-- #region progress-->
+    <div class="py-0 md:py-8 md:mt-5 px-0 md:px-36 mb-8">
+      <div class="relative">
+        <div class="flex justify-between">
+          <div class="w-[95%] h-1 top-8 right-2 absolute bg-[#0a5abd]"></div>
+          <div class="relative flex flex-col items-center">
+            <div
+              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-[#0a5abd] text-color"
+            >
+              <img
+                src="./public/images/svg/basket.svg"
+                class="w-5.5 h-5.5"
+                alt=""
+              />
+            </div>
+            <div class="hidden md:block mt-2 font-semibold text-[#757575]">
+              سبد خرید
+            </div>
+            <div class="md:hidden mt-2 font-semibold text-gray text-sm">
+              سبد
+            </div>
+          </div>
 
-    <!-- #region slider-->
-    <div class="mt-[35px] mx-auto px-8 max-w-screen-xl">
-      <!-- Swiper -->
-      <div class="swiper mySlider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="./public/images/slider/img-1.jpeg"
-              alt=""
-              class="bg-cover shadow-xs rounded-xl"
-            />
+          <div class="relative flex flex-col items-center">
+            <div
+              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-white text-color"
+            >
+              <img
+                src="./public/images/svg/location.svg"
+                class="w-5.5 h-5.5"
+                alt=""
+              />
+            </div>
+            <div class="hidden md:block mt-2 font-semibold text-[#757575]">
+              انتخاب آدرس
+            </div>
+            <div class="md:hidden mt-2 font-semibold text-gray text-sm">
+              آدرس
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img
-              src="./public/images/slider/img-2.jpeg"
-              alt=""
-              class="bg-cover shadow-xs rounded-xl"
-            />
+          <div class="relative flex flex-col items-center">
+            <div
+              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-white text-color"
+            >
+              <img
+                src="./public/images/svg/truck.svg"
+                class="w-5.5 h-5.5"
+                alt=""
+              />
+            </div>
+            <div class="hidden md:block mt-2 font-semibold text-[#757575]">
+              نحوه ارسال
+            </div>
+            <div class="md:hidden mt-2 font-semibold text-gray text-sm">
+              ارسال
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img
-              src="./public/images/slider/img-3.jpeg"
-              alt=""
-              class="bg-cover shadow-xs rounded-xl"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./public/images/slider/img-4.jpeg"
-              alt=""
-              class="bg-cover shadow-xs rounded-xl"
-            />
+          <div class="relative flex flex-col items-center">
+            <div
+              class="flex justify-center items-center w-16 h-16 rounded-full border-4 border-[#0a5abd] z-30 bg-white text-color"
+            >
+              <img
+                src="./public/images/svg/wallet.svg"
+                class="w-5.5 h-5.5"
+                alt=""
+              />
+            </div>
+            <div class="mt-2 font-semibold text-[#757575]">پرداخت</div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </div>
     <!-- #endregion -->
-    <!-- #region daily-offers-->
-    <div class="w-[1248px] h-[700px] mt-[35px] mx-auto bg-[#e2e2e2] rounded-xl px-12 pb-12 ">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-3 font-bold py-7 font-[shabnam] text-2xl md:text-4xl">
-          <img src="./public/images/svg/daily-percent.svg" alt="">
-          <span class="text-[#757575]">تخفیف‌های روزانه دسترسی</span>
+    <!-- #region payment-->
+    <div class="flex flex-col px-10 md:flex-row gap-4">
+      <div class="w-full md:w-[67%] flex flex-col gap-4">
+        <div
+          class="flex p-4 text-[#757575] items-center justify-center rounded-xl border border-gray-200 bg-white h-18"
+        >
+          <div class="w-1/2">کد تخفیف دارید؟</div>
+          <div class="1/2 flex pr-28 items-center gap-2">
+            <input
+              id="text"
+              type="text"
+              class="block w-52 h-9 placeholder:text-[#757575] border border-gray-200 rounded-xl text-sm focus:outline-none py-1.5 px-2"
+              placeholder="کد تخفیف"
+            />
+            <div
+              class="w-18 h-10 px-1 text-sm text-white font-semibold flex justify-center bg-[#0a5abd] opacity-50 rounded-xl items-center"
+            >
+              ثبت کوپن
+            </div>
+          </div>
         </div>
-        <div class="hidden md:block text-2xl md:text-4xl text-[#757575] font-[shabnam] ">
-          <span class="text-[24px] font-bold ">۲۳:۲۴:۲۵</span>
-        </div>
+        <div
+          class="flex flex-col mb-4 p-4 text-gray items-center rounded-xl border border-gray-200 bg-white h-58"
+        ></div>
       </div>
-      <div class="flex flex-col md:flex-row">
-        <div class=""></div>
+      <div class="md:w-[33%] flex flex-col gap-4">
+        <div class="flex flex-col w-full bg-blue-600 h-16"></div>
+        <div class="flex flex-col w-full bg-blue-600 h-16"></div>
       </div>
     </div>
-    <!-- #endregion -->
-    
-    
-    
-    <!-- #region scripts-->
-    <!-- #region swiper-js-->
-    <script src="./swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySlider", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-    <!-- #endregion -->
     <!-- #endregion -->
   </body>
 </html>

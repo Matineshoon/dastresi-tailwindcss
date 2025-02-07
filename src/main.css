@@ -1,8 +1,16 @@
 @import "tailwindcss";
 @font-face {
-    font-family: shabnam;
-    font-style: normal;
-    /* font-weight: 200 700; */
-    font-display: swap;
-    src: url("../public/font/Shabnam.woff") format("woff");
+  font-family: shabnam;
+  font-style: normal;
+  /* font-weight: 200 700; */
+  font-display: swap;
+  src: url("../public/font/Shabnam.woff") format("woff");
+}
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@layer base {
+  body {
+    @apply font-[shabnam] bg-[#fafafa];
+  }
+ 
 }
