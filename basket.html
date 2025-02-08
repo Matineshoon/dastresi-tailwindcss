@@ -10,12 +10,12 @@
   <body>
     <!-- #region header-desktop-->
     <div
-      class="sticky top-0 z-10 lg:pt-[10px] lg:bg-white bg-[#EFEFEF] pt-0 px-[50px] w-full h-[135px] box-border shadow-sm"
+      class="sticky top-0 z-50 lg:pt-[10px] lg:bg-white bg-[#EFEFEF] pt-0 px-[50px] w-full h-[135px] box-border shadow-sm"
     >
       <!-- #region header-top -->
       <div class="w-full h-3/5 flex items-center justify-start box-border">
         <div class="w-9/12 h-full flex items-center gap-x-[30px]">
-          <a href="#" class="block w-fit h-fit">
+          <a href="./index.html" class="block w-fit h-fit">
             <img class="w-24" src="./public/images/header/logo.png" alt="" />
           </a>
           <div
@@ -23,7 +23,7 @@
           >
             <label for="search"
               ><div class="">
-                <img src="./public/svg/search.svg" alt="" /></div
+                <img src="./public/images/svg/search.svg" alt="" /></div
             ></label>
             <div class="w-fit h-fit">
               <input
@@ -425,14 +425,73 @@
           </div>
         </div>
         <div
-          class="flex flex-col mb-4 p-4 text-gray items-center rounded-xl border border-gray-200 bg-white h-58"
-        ></div>
+          class="flex flex-col items-center mb-8 w-full bg-white text-gray rounded-xl border border-gray-200 h-64"
+        >
+          <img
+            class="opacity-50 w-[100px] h-[100px] m-6"
+            src="./public/images/payment/image-1.png"
+            alt=""
+          />
+          <div class="text-center">
+            <div class="flex justify-center mb-3"></div>
+            <p class="text-sm text-[#757575] mb-4">کالایی انتخاب نشده است!</p>
+            <a href="#" class="text-[#9b2c2c] mt-2 block text-sm"
+              >مشاهده همه‌ی محصولات</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="md:w-[33%] flex flex-col gap-4">
-        <div class="flex flex-col w-full bg-blue-600 h-16"></div>
-        <div class="flex flex-col w-full bg-blue-600 h-16"></div>
+      <div class="md:w-[35%] flex flex-col gap-4">
+        <div
+          class="flex flex-col justify-center w-full bg-[#F7F8FA] h-72 rounded-xl border border-gray-200"
+        >
+          <div class="flex justify-between px-4 py-3 text-md text-[#757575]">
+            <span class="font-bold">قیمت اصلی کالاها (۰):</span>
+            <div class="flex items-center gap-2">
+              <span class="text-lg text-[#757575] font-bold">۰</span>
+              <span class="text-[#757575] text-sm">تومان</span>
+            </div>
+          </div>
+          <div class="flex justify-between px-4 py-3 text-md text-[#757575]">
+            <span class="font-bold">کوپن تخفیف:</span>
+            <div class="flex items-center gap-2">
+              <span class="text-lg text-[#757575] font-bold">۰</span>
+              <span class="text-[#757575] text-sm">تومان</span>
+            </div>
+          </div>
+          <div
+            class="flex justify-between border-b border-gray-200 px-4 py-3 text-md text-[#757575]"
+          >
+            <span class="font-bold">مجموع تخفیف‌ها:</span>
+            <div class="flex items-center gap-2">
+              <span class="text-lg text-[#757575] font-bold">۰</span>
+              <span class="text-[#757575] text-sm">تومان</span>
+            </div>
+          </div>
+          <div class="flex justify-between px-4 py-3 text-md text-[#757575]">
+            <span class="font-bold">جمع سبد خرید:</span>
+            <div class="flex items-center gap-2">
+              <span class="text-lg text-[#757575] font-bold">۰</span>
+              <span class="text-[#757575] text-sm">تومان</span>
+            </div>
+          </div>
+
+          <div class="p-4">
+            <span
+              class="block h-12 cursor-pointer text-white bg-[#0a5abd] hover:bg-[#0a295a] text-center p-2 py-3 font-semibold duration-300 rounded-lg"
+              >تایید لیست محصولات</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col w-full bg-white p-4 text-sm text-[#757575] leading-7 rounded-xl border border-gray-200 h-20"
+        >
+          هزینه ارسال با توجه به انتخاب نحوه ارسال کالا محاسبه می‌شود و به مبلغ
+          بالا اضافه می‌گردد.
+        </div>
       </div>
     </div>
+
     <!-- #endregion -->
   </body>
 </html>
