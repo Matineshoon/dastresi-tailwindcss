@@ -9,16 +9,48 @@
     <title>فروشگاه اینترنتی دسترسی</title>
   </head>
   <body>
+    <!-- #region top-refferer-->
+    <span id="top none"></span>
+    <!-- #endregion -->
     <!-- #region header-mobile-->
     <div class="block lg:hidden">
       <div
-        class="flex bg-[#757575] justify-between text-[#666666] items-center px-3 py-4 shadow-black"
-      ></div>
+        class="flex bg-[#f1f1f1] justify-between text-[#666666] items-center px-4 py-4 shadow-black-1-4"
+      >
+        <div class="flex gap-4.5">
+          <a href="#" class="block w-fit"
+            ><img src="./public/images/svg/bars.svg" class="w-5 h-5" alt=""
+          /></a>
+          <a href="index.html" class="block w-fit"
+            ><img src="./public/images/header/logo.png" class="h-6" alt=""
+          /></a>
+        </div>
+        <div class="flex gap-4.5">
+          <a href="#" class="block w-fit"
+            ><img src="./public/images/svg/mobile-search.svg" alt="" class=""
+          /></a>
+          <a href="register.html" class="block w-fit"
+            ><img src="./public/images/svg/profile.svg" alt="" class=""
+          /></a>
+          <a href="basket.html" class="block relative w-fit">
+            <img
+              src="./public/images/svg/shopping.svg"
+              alt=""
+              class="w-6 h-6"
+            />
+            <div
+              class="w-4 h-4 flex items-center justify-center text-xs bg-[#fe5f55] rounded-full absolute right-[-30%] top-[-25%] text-white"
+            >
+              ۰
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
     <!-- #endregion -->
     <!-- #region header-desktop-->
     <div
-      class="sticky top-0 z-100 lg:pt-[10px] lg:bg-white bg-[#EFEFEF] pt-0 px-[50px] w-full h-[135px] box-border shadow-sm"
+      class="sticky top-0 hidden lg:block z-100 lg:pt-[10px] lg:bg-white pt-0 px-[50px] w-full h-[135px] box-border shadow-sm"
     >
       <!-- #region header-top -->
       <div class="w-full h-3/5 flex items-center justify-start box-border">
