@@ -13,7 +13,7 @@
     <span id="top none"></span>
     <!-- #endregion -->
     <!-- #region header-mobile-->
-    <div class="block lg:hidden">
+    <div class="block sticky top-0 z-100 lg:hidden">
       <div
         class="flex bg-[#f1f1f1] justify-between text-[#666666] items-center px-4 py-4 shadow-black-1-4"
       >
@@ -77,7 +77,7 @@
           <div class="flex gap-6 items-center">
             <a
               href="customers.html"
-              class="font-[shabnam] text-[#a3a3a3] text-[14px] hover:text-[#0a295a]"
+              class="font-[shabnam] text-[#a3a3a3] text-[14px] line-clamp-1 hover:text-[#0a295a]"
               >باشگاه مشتریان</a
             >
             <a
@@ -87,12 +87,12 @@
             >
             <a
               href="#"
-              class="font-[shabnam] text-[#a3a3a3] text-[14px] hover:text-[#0a295a]"
+              class="font-[shabnam] text-[#a3a3a3] text-[14px] line-clamp-1 hover:text-[#0a295a]"
               >ارتباط با ما</a
             >
             <a
               href="#"
-              class="font-[shabnam] text-[#a3a3a3] text-[14px] hover:text-[#0a295a]"
+              class="font-[shabnam] text-[#a3a3a3] text-[14px] line-clamp-1 hover:text-[#0a295a]"
               >درباره ما</a
             >
           </div>
@@ -149,7 +149,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             لوازم جانبی موبایل و کامپیوتر
             <svg
@@ -180,7 +180,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             کابل - مبدل - رابط
             <svg
@@ -211,7 +211,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             لوازم تولید محتوا
             <svg
@@ -242,7 +242,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             لوازم شبکه
             <svg
@@ -273,7 +273,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             کنسول بازی و لوازم جانبی
             <svg
@@ -304,7 +304,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             لوازم خانگی و شخصی
             <svg
@@ -369,6 +369,13 @@
     </div>
     <!-- #endregion -->
 
+    <!-- #region notifications-->
+    <div
+      class="flex items-center justify-center w-15 h-15 rounded-full bg-[#ff9900] fixed bottom-10 right-24 z-100 group duration-300 delay-100 hover:bg-[#db2725]"
+    >
+      <img src="./public/images/svg/bell.svg" alt="" class="  " />
+    </div>
+    <!-- #endregion -->
     <!-- #region backup-btn-->
     <a
       href="#"
@@ -388,28 +395,28 @@
             <img
               src="./public/images/slider/img-1.jpeg"
               alt=""
-              class="bg-cover shadow-xs rounded-xl"
+              class="shadow-xs h-40 lg:h-100 rounded-xl"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./public/images/slider/img-2.jpeg"
               alt=""
-              class="bg-cover shadow-xs rounded-xl"
+              class="h-40 lg:h-120 shadow-xs rounded-xl"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./public/images/slider/img-3.jpeg"
               alt=""
-              class="bg-cover shadow-xs rounded-xl"
+              class="h-40 lg:h-120 shadow-xs rounded-xl"
             />
           </div>
           <div class="swiper-slide">
             <img
               src="./public/images/slider/img-4.jpeg"
               alt=""
-              class="bg-cover shadow-xs rounded-xl"
+              class="h-40 lg:h-120 shadow-xs rounded-xl"
             />
           </div>
         </div>
@@ -419,14 +426,14 @@
     <!-- #endregion -->
     <!-- #region daily-offers-->
     <div
-      class="w-[1248px] h-[700px] mt-[35px] mx-auto bg-[#e2e2e2] rounded-xl px-12 pb-12"
+      class="w-full md:w-[95%] mb-10 mt-[35px] mx-auto bg-[#e2e2e2] md:rounded-xl"
     >
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between px-10">
         <div
-          class="flex items-center gap-3 font-bold py-7 font-[shabnam] text-2xl md:text-4xl"
+          class="flex justify-center items-center gap-3 text-2xl md:text-4xl font-bold pt-7 pb-2 font-[shabnam]"
         >
-          <img src="./public/images/svg/daily-percent.svg" alt="" />
-          <span class="text-[#757575]">تخفیف‌های روزانه دسترسی</span>
+          <img src="./public/images/svg/daily-percent.svg" class="w-7" alt="" />
+          <span class="text-[gray]">تخفیف‌های روزانه دسترسی</span>
         </div>
         <div
           class="hidden md:block text-2xl md:text-4xl text-[#757575] font-[shabnam]"
@@ -434,11 +441,231 @@
           <span class="text-[24px] font-bold">۲۳:۲۴:۲۵</span>
         </div>
       </div>
-      <div class="flex flex-col md:flex-row">
-        <div class=""></div>
+      <div class="flex flex-col md:flex-row p-4">
+        <div
+          class="flex items-center w-full mb-6 mx-auto bg-white rounded-xl hover:shadow-black-1-5"
+        >
+          <div class="p-1">
+            <img
+              src="./public/images/daily-offers/img-1.png"
+              alt=""
+              class="w-40"
+            />
+          </div>
+          <div class="w-1/2 flex flex-col justify-between gap-2">
+            <h3 class="px-2 text-gray-900 font-medium text-sm leading-7">
+              شارژر دیواری 30 واتی آکی مدل Aukey Pa-B1L
+            </h3>
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-row px-2 gap-2 justify-between">
+                <span class="font-bold text-md line-through text-gray-400"
+                  >۹۳۰,۰۰۰</span
+                >
+                <span class="text-[#fe5f55] rounded-xl font-medium text-sm">
+                  ۲۰۳,۰۰۰ تومان تخفیف
+                </span>
+              </div>
+              <div class="flex flex-row items-center justify-end gap-1">
+                <span class="text-[#0a5abd] font-bold text-xl">۷۲۷,۰۰۰</span>
+                <span class="text-gray-500 text-xs">تومان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row p-4">
+          <div
+            class="flex items-center w-full mx-auto bg-white rounded-xl hover:shadow-black-1-5"
+          >
+            <div class="p-1">
+              <img
+                src="./public/images/daily-offer/img-2.png"
+                alt=""
+                class="w-40"
+              />
+            </div>
+            <div class="w-1/2 flex flex-col py-4 justify-between gap-2">
+              <h3 class="px-2 text-[black-87] font-medium text-sm leading-7">
+                هندزفری بلوتوثی دورگردنی راوپاور مدل RavPower Bh1003
+              </h3>
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-row px-2 gap-2 justify-between">
+                  <span class="line-through text-md text-gray-500">
+                    ۱,۷۹۸,۰۰۰
+                  </span>
+                  <span class="text-[#fe5f55] rounded-xl font-medium text-sm">
+                    ۵۰۰,۰۰۰ تومان تخفیف
+                  </span>
+                </div>
+                <div class="px-2 flex flex-row items-center justify-end gap-1">
+                  <span class="text-[#0a5abd] font-bold text-xl">
+                    ۱,۲۹۸,۰۰۰
+                  </span>
+                  <span class="text-gray-500 text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row p-4">
+          <div
+            class="flex items-center w-full mx-auto bg-white rounded-xl hover:shadow-black-1-5"
+          >
+            <div class="p-1">
+              <img
+                src="./public/images/daily-offer/img-3.png"
+                alt=""
+                class="w-40"
+              />
+            </div>
+            <div class="w-1/2 flex flex-col py-4 justify-between gap-2">
+              <h3 class="text-[black-87] font-medium text-sm leading-7">
+                شارژر دیواری راوپاور 25 واتی مدل Ravpower RP-PC156
+              </h3>
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-row px-3 gap-2 justify-between">
+                  <span class="line-through text-md text-gray-500"
+                    >۸۸۵,۰۰۰</span
+                  >
+                  <span class="text-[#fe5f55] rounded-xl font-medium text-sm">
+                    ۳۰۰,۰۰۰ تومان تخفیف
+                  </span>
+                </div>
+                <div class="px-2 flex flex-row items-center justify-end gap-1">
+                  <span class="text-[#0a5abd] font-bold text-xl">۵۸۵,۰۰۰</span>
+                  <span class="text-gray-500 text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row p-4">
+          <div
+            class="flex items-center w-full mx-auto bg-white rounded-xl hover:shadow-black-1-5"
+          >
+            <div class="p-1">
+              <img
+                src="./public/images/daily-offer/img-4.png"
+                alt=""
+                class="w-40"
+              />
+            </div>
+            <div class="w-1/2 flex flex-col py-4 justify-between gap-2">
+              <h3 class="text-[black-87] font-medium text-sm leading-7">
+                شارژر دیواری راوپاور 25 واتی مدل Ravpower RP-PC156
+              </h3>
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-row px-3 gap-2 justify-between">
+                  <span class="line-through text-md text-gray-500"
+                    >۸۹۵,۰۰۰</span
+                  >
+                  <span class="text-[#fe5f55] rounded-xl font-medium text-sm">
+                    ۱۰۰,۰۰۰ تومان تخفیف
+                  </span>
+                </div>
+                <div class="px-2 flex flex-row items-center justify-end gap-1">
+                  <span class="text-[#0a5abd] font-bold text-xl">۷۹۵,۰۰۰</span>
+                  <span class="text-gray-500 text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row p-4">
+          <div
+            class="flex items-center w-full mx-auto bg-white rounded-xl hover:shadow-black-1-5"
+          >
+            <div class="p-1">
+              <img
+                src="./public/images/daily-offer/img-5.png"
+                alt=""
+                class="w-40"
+              />
+            </div>
+            <div class="w-1/2 flex flex-col py-4 justify-between gap-2">
+              <h3 class="text-[black-87] font-medium text-sm leading-7">
+                پاوربانک مگ سیف مک دودو 5 هزار میلی آمپر مدل Mcdodo 7050
+              </h3>
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-row px-3 gap-2 justify-between">
+                  <span class="line-through text-md text-gray-500">
+                    ۱,۳۹۱,۰۰۰
+                  </span>
+                  <span class="text-[#fe5f55] rounded-xl font-medium text-sm">
+                    ۱۰۱,۰۰۰ تومان تخفیف
+                  </span>
+                </div>
+                <div class="px-2 flex flex-row items-center justify-end gap-1">
+                  <span class="text-[#0a5abd] font-bold text-xl">
+                    ۱,۲۹۰,۰۰۰</span
+                  >
+                  <span class="text-gray-500 text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- #endregion -->
+    <!-- #region category-->
+    <div class="max-w-screen-xl mx-auto p-4 xl:rounded-xl mb-8">
+      <div class="lg:mx-4">
+        <h3 class="text-2xl text-center font-bold text-black-87 mb-4">
+          دسته‌بندی‌های منتخب
+        </h3>
+        <div class="flex justify-between items-center">
+          <a href="#" class="flex items-center justify-center w-44 h-44 p-1.5">
+            <img
+              src="./public/images/category/cable.png"
+              alt=""
+              class="w-full"
+            />
+          </a>
+          <a href="#" class="flex items-center justify-center w-44 h-44 p-1.5">
+            <img
+              src="./public/images/category/adaptor.png"
+              alt=""
+              class="w-full"
+            />
+          </a>
+        </div>
+        <div class="flex justify-between items-center">
+          <a href="#" class="flex items-center justify-center w-44 h-44 p-1.5">
+            <img
+              src="./public/images/category/powerbank.png"
+              alt=""
+              class="w-full"
+            />
+          </a>
+          <a href="#" class="flex items-center justify-center w-44 h-44 p-1.5">
+            <img
+              src="./public/images/category/handsfree.png"
+              alt=""
+              class="w-full"
+            />
+          </a>
+        </div>
+        <div class="flex justify-between items-center">
+          <a href="#" class="flex items-center justify-center w-44 h-44 p-1.5">
+            <img
+              src="./public/images/category/Holder.png"
+              alt=""
+              class="w-full"
+            />
+          </a>
+          <a href="#" class="flex items-center justify-center w-44 h-44 p-1.5">
+            <img
+              src="./public/images/category/mobadel.png"
+              alt=""
+              class="w-full"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
     <!-- #region footer-->
     <!-- #region about-us-->
     <div
@@ -450,15 +677,15 @@
       </div>
       <div class="flex items-center gap-2 mb-4 lg:mb-0">
         <img src="./public/images/svg/footer-clock.svg" alt="" class="w-5" />
-        <span class="block text-[14px] text-[#757575]"
-          >شنبه تا چهارشنبه از ساعت 10 صبح الی ساعت 18 پنجشنبه ها از 10 صبح الی
-          ساعت 16</span
+        <span class="block text-[14px] leading-7 text-[#757575]"
+          >شنبه تا چهارشنبه از ساعت ۱۰ صبح الی ساعت ۱۸ پنجشنبه ها از ۱۰ صبح الی
+          ساعت ۱۶</span
         >
       </div>
       <div class="flex items-center gap-2 mb-4 lg:mb-0">
         <img src="./public/images/svg/footer-location.svg" alt="" class="w-5" />
-        <span class="block text-[14px] text-[#757575]"
-          >تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک 3 - فروشگاه
+        <span class="block text-[14px] leading-7 text-[#757575]"
+          >تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک ۳ - فروشگاه
           بدیع</span
         >
       </div>
@@ -475,7 +702,7 @@
     <!-- #endregion -->
     <!-- #region access-->
     <div
-      class="bg-[#f5f5f5] mx-auto px-32 flex flex-col lg:flex-row gap-8 py-4 lg:py-5"
+      class="bg-[#f5f5f5] mx-auto px-4 lg:px-32 flex flex-col lg:flex-row gap-8 py-4 lg:py-5"
     >
       <div
         class="justify-center items-center flex flex-col gap-8 pt-8 lg:pt-10"
