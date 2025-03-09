@@ -12,9 +12,110 @@
     <span id="top none"></span>
     <!-- #endregion -->
 
+     <!-- #region header-mobile-->
+     <div class="block sticky top-0 z-100 lg:hidden">
+      <div
+        class="flex bg-[#f1f1f1] justify-between text-[#666666] items-center px-4 py-4 shadow-black-1-4"
+      >
+        <div class="flex gap-4.5">
+          <!-- #region modal-->
+          <label for="menu"
+            ><img src="./public/images/svg/bars.svg" class="w-5" alt=""
+          /></label>
+          <input type="radio" id="menu" class="hidden" />
+          <div
+            class="modal-menu fixed shadow-2xl top-0 right-0 w-72 h-full bg-white hidden"
+          >
+            <div class="flex justify-center">
+              <a href="index.html" class="block">
+              <img src="./public/images/header/logo.png" alt="" class="my-8 w-36">
+            </a>
+          </div>
+          <div class="flex items-center justify-around p-2.5 border-y-[1px] border-y-[#e2e2e2] bg-white">
+            <span class="text-xs text-[#a3a3a3] hover:text-black">خانه</span>
+            <span class="text-xs text-[#a3a3a3] hover:text-black">درباره ما</span>
+            <span class="text-xs text-[#a3a3a3] hover:text-black">تماس با ما</span>
+            <span class="text-xs text-[#a3a3a3] hover:text-black">بلاگ</span>
+          </div>
+          <div class="overflow-auto h-6/10">
+            <div class="my-10 flex justify-between text-black mx-4 font-extralight">
+              
+              لوازم جانبی موبایل و کامپیوتر
+            <img src="./public/images/svg/header-arrow.svg" alt="" class="w-2">
+            </div>
+            <div class="my-10 flex justify-between text-black mx-4 font-extralight">
+              
+              کابل - مبدل - رابط
+              <img src="./public/images/svg/header-arrow.svg" alt="" class="w-2">
+            </div>
+            <div class="my-10 flex justify-between text-black mx-4 font-extralight">
+              
+              لوازم تولید محتوا
+              <img src="./public/images/svg/header-arrow.svg" alt="" class="w-2">
+            </div>
+            <div class="my-10 flex justify-between text-black mx-4 font-extralight">
+              
+              لوازم شبکه
+              <img src="./public/images/svg/header-arrow.svg" alt="" class="w-2">
+            </div>
+            <div class="my-10 flex justify-between text-black mx-4 font-extralight">
+              
+              کنسول بازی و لوازم جانبی
+              <img src="./public/images/svg/header-arrow.svg" alt="" class="w-2">
+            </div>
+            <div class="my-10 flex justify-between text-black mx-4 font-extralight">
+              
+              لوازم خانگی و شخصی
+              <img src="./public/images/svg/header-arrow.svg" alt="" class="w-2">
+            </div>
+            <div class="my-10 flex justify-between text-black mx-4 font-extralight">
+              
+              برند‌ها
+              <img src="./public/images/svg/header-arrow.svg" alt="" class="w-2">
+            </div>
+          </div>
+          <div
+      class=" mx-auto h/2/10 mt-6 flex items-center justify-center"
+    >
+      <a
+        href="customers.html"
+        class="py-4 px-16  bg-[#0A295A] text-white rounded-xl text-center"
+      >
+        <p class="text-xs ">ورود به باشگاه مشتریان</p>
+      </a>
+    </div>
+          </div>
+          <!-- #endregion -->
+          <a href="index.html" class="block w-fit"
+            ><img src="./public/images/header/logo.png" class="h-6" alt=""
+          /></a>
+        </div>
+        <div class="flex gap-4.5">
+          <a href="#" class="block w-fit"
+            ><img src="./public/images/svg/mobile-search.svg" alt="" class=""
+          /></a>
+          <a href="register.html" class="block w-fit"
+            ><img src="./public/images/svg/profile.svg" alt="" class=""
+          /></a>
+          <a href="basket.html" class="block relative w-fit">
+            <img
+              src="./public/images/svg/shopping.svg"
+              alt=""
+              class="w-6 h-6"
+            />
+            <div
+              class="w-4 h-4 flex items-center justify-center text-xs bg-[#fe5f55] rounded-full absolute right-[-30%] top-[-25%] text-white"
+            >
+              ۰
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
     <!-- #region header-desktop-->
     <div
-      class="sticky top-0 z-100 lg:pt-[10px] lg:bg-white bg-[#EFEFEF] pt-0 px-[50px] w-full h-[135px] box-border shadow-sm"
+      class="sticky top-0 hidden lg:block z-100 lg:pt-[10px] lg:bg-white pt-0 px-[50px] w-full h-[135px] box-border shadow-sm"
     >
       <!-- #region header-top -->
       <div class="w-full h-3/5 flex items-center justify-start box-border">
@@ -41,7 +142,7 @@
           <div class="flex gap-6 items-center">
             <a
               href="customers.html"
-              class="font-[shabnam] text-[#a3a3a3] text-[14px] hover:text-[#0a295a]"
+              class="font-[shabnam] text-[#a3a3a3] text-[14px] line-clamp-1 hover:text-[#0a295a]"
               >باشگاه مشتریان</a
             >
             <a
@@ -51,12 +152,12 @@
             >
             <a
               href="#"
-              class="font-[shabnam] text-[#a3a3a3] text-[14px] hover:text-[#0a295a]"
+              class="font-[shabnam] text-[#a3a3a3] text-[14px] line-clamp-1 hover:text-[#0a295a]"
               >ارتباط با ما</a
             >
             <a
               href="#"
-              class="font-[shabnam] text-[#a3a3a3] text-[14px] hover:text-[#0a295a]"
+              class="font-[shabnam] text-[#a3a3a3] text-[14px] line-clamp-1 hover:text-[#0a295a]"
               >درباره ما</a
             >
           </div>
@@ -113,7 +214,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             لوازم جانبی موبایل و کامپیوتر
             <svg
@@ -144,7 +245,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             کابل - مبدل - رابط
             <svg
@@ -175,7 +276,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             لوازم تولید محتوا
             <svg
@@ -206,7 +307,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             لوازم شبکه
             <svg
@@ -237,7 +338,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             کنسول بازی و لوازم جانبی
             <svg
@@ -268,7 +369,7 @@
         </ul>
         <ul class="flex-col group h-full space-y-4 mt-2">
           <li
-            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] pl-[15px]"
+            class="flex justify-center group-hover:text-[#fe5f55] gap-x-3 items-center nav-link text-[14px] text-[#00000099] font-medium font-[shabnam] line-clamp-1 pl-[15px]"
           >
             لوازم خانگی و شخصی
             <svg
@@ -332,7 +433,8 @@
       <!-- #endregion -->
     </div>
     <!-- #endregion -->
-    <!-- #region backup-btn-->
+
+ <!-- #region backup-btn-->
      <a href="#" class="flex items-center hover:w-14.5 hover:h-14.5 duration-200 justify-center w-14 h-14 rounded-2xl bg-[#3f51b5] shadow-lg fixed right-0 bottom-4">
 <img src="./public/images/svg/backup.svg" class="" alt="">
      </a>
